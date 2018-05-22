@@ -1,0 +1,28 @@
+.heading{
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 18%;
+    margin-top: 10%;
+    
+}
+
+.aparna{
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #555;
+        outline: none;
+}
+
+button{
+    width: 25%;
+}
+
+.btn.btn-primary{
+    background-color: #555;
+    border-color: black;
+}
+
+
+    
