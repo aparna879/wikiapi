@@ -7,6 +7,7 @@ $(document).ready(function(){
         // API url with userinput
         var url= "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search="+userinput;
 
+        
         $.ajax({
             type:"GET",
             url:url,
@@ -18,6 +19,8 @@ $(document).ready(function(){
             //     console.log(data[3][0]); for link
             //     console.log(data);       for complete Array
 
+
+
                 $('#output').html(' '); //for clearing previous output
                 for(var i=0;i<data[1].length;i++){
                     $('#output').prepend("<li><a href="+data[3][i]+">"+data[1][i]+"</a></p>"+data[2][i]+"</p></li>");
@@ -27,14 +30,19 @@ $(document).ready(function(){
             error: function(errorMessage){
                 alert("Error");
             }
+
         });
+
     });
+
     // for getting the data on pressing ENTER
     $('#userinput').keypress(function(e){
         if(e.which==13){
             $("#search").click();
         }
+
     });
+
 });
 
 
