@@ -18,9 +18,6 @@ $(document).ready(function(){
             //     console.log(data[2][0]); for description
             //     console.log(data[3][0]); for link
             //     console.log(data);       for complete Array
-
-
-
                 $('#output').html(' '); //for clearing previous output
                 for(var i=0;i<data[1].length;i++){
                     $('#output').prepend("<li><a href="+data[3][i]+">"+data[1][i]+"</a></p>"+data[2][i]+"</p></li>");
